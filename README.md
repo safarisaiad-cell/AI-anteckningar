@@ -1,80 +1,73 @@
-# AI-anteckningar
-Slutprojekt för kursen Att bygga AI
-<!-- This is the markdown template for the final project of the Building AI course, 
-created by Reaktor Innovations and University of Helsinki. 
-Copy the template, paste it to your GitHub README and edit! -->
+AI-driven Informationssäkerhetsassistent
 
-# Project Title
+Slutprojekt för Att bygga AI-kursen
 
-Final project for the Building AI course
+Sammanfattning
 
-## Summary
+En AI-driven assistent som övervakar nätverk, system och användarbeteenden för att identifiera säkerhetshot och ge rekommendationer för att förebygga dataintrång. Att bygga AI-kursprojekt.
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+Bakgrund
 
+Projektet syftar till att lösa vanliga problem inom informationssäkerhet:
 
-## Background
+Oidentifierade intrång i nätverk eller system.
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+Brist på automatiserad övervakning av misstänkta aktiviteter.
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+Svårighet att analysera stora mängder loggar och användardata i realtid.
 
+Informationssäkerhet är kritiskt för företag och organisationer, särskilt i en tid med ökande cyberattacker. Jag är personligen motiverad av att kombinera AI med cybersäkerhet för att skydda känslig information.
 
-## How is it used?
+Hur används den?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+Systemet samlar in data från nätverkstrafik, systemloggar och användaraktiviteter, och analyserar den med AI-modeller:
 
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
+Larm vid ovanliga beteenden (t.ex. inloggningar från oväntade platser).
 
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
+Identifiering av potentiella phishing-försök och malware.
 
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
+Råd till administratörer om åtgärder som patchning, kontospärr eller segmentering av nätverk.
 
-   totPop = sum(pop)
-   totFish = sum(fishers)
+Användarna är IT-administratörer och säkerhetsteam som vill minska risken för intrång och dataläckor.
 
-   # write your solution here
+Datakällor och AI-metoder
 
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
+Datakällor:
 
-main()
-```
+System- och applikationsloggar.
 
+Nätverkstrafikdata.
 
-## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
+Databaser med kända sårbarheter och attackmönster.
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+AI-tekniker:
 
-## Challenges
+Maskininlärning för anomali-detektering i loggar och trafikflöden.
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+Natural Language Processing (NLP) för att analysera e-post och meddelanden för phishing.
 
-## What next?
+Klassificering av hotnivåer baserat på historiska attacker och mönster.
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+Utmaningar
 
+Falsklarm (false positives) kan irritera användare och skapa överbelastning.
 
-## Acknowledgments
+Avancerade attacker kan undvika identifiering om datan är begränsad.
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+Sekretessfrågor: AI-modellen måste hantera känslig data på ett säkert sätt.
+
+Vad händer nu?
+
+Utöka analysen med realtidsnätverkssensorer och endpoints.
+
+Implementera ett dashboard med visualiseringar av säkerhetsrisker.
+
+Integrera AI med automatiserade responsverktyg för snabba åtgärder.
+
+Utveckla modeller som kan förutse nya typer av cyberhot innan de inträffar.
+
+Tack och inspiration
+
+Inspiration: Cybersecurity AI
+
+Open-source bibliotek: TensorFlow, PyTorch, scikit-learn, Pandas
